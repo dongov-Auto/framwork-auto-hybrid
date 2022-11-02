@@ -13,3 +13,6 @@
      4. AUTOMATION_USER_LOGIN=automation-user
      5. AUTOMATION_USER_PASS=RWoH31Pw6Max
      6. GET_DEPENDENCIES_TOKEN=2FVB3DuheKTSjhzSr4zo
+* git checkout main
+  * git test
+  * git test 
