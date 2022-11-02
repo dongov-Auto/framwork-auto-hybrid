@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NopCommerce" parallel="classes" thread-count="10">
+    <listeners>
+        <listener class-name="actions.commons.MethodListener"></listener>
+        <listener class-name="actions.reportConfig.AllureTestListener"></listener>
+    </listeners>
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="setel.AskedQuestionsTests"/>
+        </classes>
+    </test>
+</suite>

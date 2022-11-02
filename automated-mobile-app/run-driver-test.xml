@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" parallel="tests" thread-count="10">
+    <listeners>
+        <listener class-name="actions.commons.MethodListener"/>
+    </listeners>
+    <test name="HomePageRoadTax" parallel="tests" thread-count="10">
+        <parameter name="platformName" value="android"/>
+        <!--        <parameter name="udid" value="470876990104"/>-->
+        <parameter name="udid" value="emulator-5554"/>
+        <!--        <parameter name="systemPort" value="8301"/>-->
+        <classes>
+            <class name="setel.driver.roadTax.SmokeTest.PayUnsuccessfulTest"/>
+        </classes>
+    </test>
+</suite>
