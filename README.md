@@ -13,30 +13,3 @@
      4. AUTOMATION_USER_LOGIN=automation-user
      5. AUTOMATION_USER_PASS=RWoH31Pw6Max
      6. GET_DEPENDENCIES_TOKEN=2FVB3DuheKTSjhzSr4zo
-
- 
- * Clone the project
-    `git clone https://gitlab.com/setel/automation/setel-automated-test.git`
- 
- * Download the core framework and build the project
- 
-    `mvn clean install -U -DskipTests=true --settings=settings.xml`
- 
- * Run Tests
-    mvn clean test -pl {module} 
-    Following parameters can be used:
-     * -Dsuite={suite_name}
-     * -DenvBaseUrl={environment_url}
-     * -Dtest={suiteName}#{testName}
-     * -DsetelUI.suiteXmlFile={xmlFile}
-
-     
- * Generate allure report
-    `allure serve {module}/allure-results`
-    
- For Detailed installation doc, Please refer
-  * [macOS](https://setelnow.atlassian.net/wiki/spaces/QA/pages/462259482/Installation+for+macOS+Machine)
-  * [Windows](https://setelnow.atlassian.net/wiki/spaces/QA/pages/1733789105/Installation+for+Windows+OS+Machine)
-       
-    
-    
